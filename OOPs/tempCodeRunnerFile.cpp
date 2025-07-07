@@ -1,0 +1,1 @@
+cout << "name : " << t1.name << endl;
