@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void Bubble_Sort(int arr[], int n)
+void Bubble_Sort(int &arr[], int n)
 {
     for (int i = n - 1; i >= 0; i--)
     {
@@ -20,7 +20,6 @@ void Bubble_Sort(int arr[], int n)
         {
             break;
         }
-        cout << "Runs\n";
     }
 }
 
@@ -33,6 +32,7 @@ int main()
     {
         cin >> arr[i];
     }
+
     Bubble_Sort(arr, n);
     for (int i = 0; i < n; i++)
     {
