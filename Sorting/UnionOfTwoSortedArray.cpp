@@ -11,11 +11,13 @@ vector<int> UnionArr(vector<int> a, vector<int> b, int n, int m)
             ans.push_back(a[i]);
             i++;
         }
+
         else if (b[j] < a[i])
         {
             ans.push_back(b[j]);
             j++;
         }
+
         else
         {
             ans.push_back(a[i]);
