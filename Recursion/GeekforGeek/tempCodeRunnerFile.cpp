@@ -22,7 +22,7 @@ long long getMinRequests(vector<int>& request, vector<int>& health, int k) {
         hits[i] = (health[i] + k - 1) / k;
         curr_sum += request[i];
     }
-
+    
     priority_queue<Server> pq;
     for (int i = 0; i < n; ++i) {
         pq.push({i, (double)request[i] / hits[i], hits[i]});
