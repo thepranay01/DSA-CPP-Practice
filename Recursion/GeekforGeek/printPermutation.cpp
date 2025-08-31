@@ -5,6 +5,7 @@ void permute(string s, int i = 0)
     if (i == s.length() - 1)
     {
         cout << s << " ";
+        return;
     }
     for (int j = i; j < s.length(); j++)
     {
